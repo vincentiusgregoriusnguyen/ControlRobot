@@ -20,6 +20,7 @@ public class MainActivity extends Activity {
 	ImageButton left;
 	ImageButton right;
 	ImageButton backward;
+	TextView Display0;
 	TextView Display1;
 	TextView Display2;
 	TextView Display3;
@@ -30,7 +31,7 @@ public class MainActivity extends Activity {
 	TextView Display8;
 	TextView Display9;
 	
-	TextView Display10;
+	/*TextView Display10;
 	TextView Display11;
 	TextView Display12;
 	TextView Display13;
@@ -38,7 +39,7 @@ public class MainActivity extends Activity {
 	TextView Display15;
 	TextView Display16;
 	TextView Display17;
-	TextView Display18;
+	TextView Display18;*/
 	
 	Button button;
 	Button button2;
@@ -86,6 +87,7 @@ public class MainActivity extends Activity {
 		left = (ImageButton) findViewById(R.id.imageButton4);
 		backward = (ImageButton) findViewById(R.id.imageButton3);*/
 		
+		Display0 = (TextView) findViewById(R.id.textView1);
 		Display1 = (TextView) findViewById(R.id.textView2);
 		Display2 = (TextView) findViewById(R.id.textView3);
 		Display3 = (TextView) findViewById(R.id.textView4);
@@ -106,7 +108,7 @@ public class MainActivity extends Activity {
 		Display8.setText(new String(Maze[7]));
 		Display9.setText(new String(Maze[8]));
 		
-		Display10 = (TextView) findViewById(R.id.textView12);
+	/*	Display10 = (TextView) findViewById(R.id.textView12);
 		Display11 = (TextView) findViewById(R.id.textView13);
 		Display12 = (TextView) findViewById(R.id.textView14);
 		Display13 = (TextView) findViewById(R.id.textView15);
@@ -114,7 +116,7 @@ public class MainActivity extends Activity {
 		Display15 = (TextView) findViewById(R.id.textView17);
 		Display16 = (TextView) findViewById(R.id.textView18);
 		Display17 = (TextView) findViewById(R.id.textView19);
-		Display18 = (TextView) findViewById(R.id.textView20);
+		Display18 = (TextView) findViewById(R.id.textView20);*/
 		
 		button = (Button) findViewById(R.id.button1);
 		
@@ -124,15 +126,16 @@ public class MainActivity extends Activity {
 			public void onClick(View arg0) {
 					if(solve(Start.getX(), Start.getY())){
 						findpath();
-						Display10.setText(new String(Maze[0]));
-						Display11.setText(new String(Maze[1]));
-						Display12.setText(new String(Maze[2]));
-						Display13.setText(new String(Maze[3]));
-						Display14.setText(new String(Maze[4]));
-						Display15.setText(new String(Maze[5]));
-						Display16.setText(new String(Maze[6]));
-						Display17.setText(new String(Maze[7]));
-						Display18.setText(new String(Maze[8]));		
+						Display0.setText("Solution");
+						Display1.setText(new String(Maze[0]));
+						Display2.setText(new String(Maze[1]));
+						Display3.setText(new String(Maze[2]));
+						Display4.setText(new String(Maze[3]));
+						Display5.setText(new String(Maze[4]));
+						Display6.setText(new String(Maze[5]));
+						Display7.setText(new String(Maze[6]));
+						Display8.setText(new String(Maze[7]));
+						Display9.setText(new String(Maze[8]));	
 						button.setVisibility(View.INVISIBLE);
 						button2.setVisibility(0);
 					}	
