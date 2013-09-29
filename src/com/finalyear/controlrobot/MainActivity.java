@@ -151,8 +151,10 @@ public class MainActivity extends Activity {
 						forward();
 					} else if (x.equals("Left")){
 						left();
+						forward();
 					} else if(x.equals("Right")){
 						right();
+						forward();
 					}
 				}
 				
