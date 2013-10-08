@@ -1,7 +1,7 @@
 package com.finalyear.controlrobot;
 import java.util.ArrayList;
 
-import com.example.controlrobot.R;
+//import com.finalyear.controlrobot.R;
 
 import android.os.Bundle;
 import android.app.Activity;
